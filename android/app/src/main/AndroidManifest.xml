@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.veltech.newsailapp">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/saillogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/saillogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityLoginWithGoogle" android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.ActivityLoginWithGoogle" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainMap" android:screenOrientation="landscape">
+        <intent-filter>
+            <action android:name="android.intent.action.MainMap" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".GenderSail" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.GenderSail" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CurrentAge" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.CurrentAge" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityMapStart" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.ActivityMapStart" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityVarthaStart" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.ActivityVarthaStart" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityShailiStart" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.ActivityShailiStart" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityAnusthaStart" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.ActivityAnusthaStart" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ActivityVartha" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.ActivityVartha" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HeartAttackHistory" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.HeartAttackHistory" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DiabetesHistory" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.DiabetesHistory" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BloodPressureHistory" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.BloodPressureHistory" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityTransitionAnustha" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.ActivityTransitionAnustha" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityAnustha" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.ActivityAnustha" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BMIHeight" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.HeightWeight" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BMIWeight" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.BMIWeight" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CaloriesBurnt" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.CaloriesBurnt" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DietPattern" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.DietPattern" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityTransitionShaili" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.ActivityTransitionShaili" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityShaili" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.ActivityShaili" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SelfAwareness" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.SelfAwareness" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AlcoholHistory" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.AlcoholHistory" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SmokingHistory" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.SmokingHistory" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SleepHistory" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.SleepHistory" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityTransitionRahasya" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.ActivityTransitionRahasya" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityRahasya" android:screenOrientation="landscape">
+        <intent-filter>
+            <action android:name="android.intent.action.ActivityRahasya" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".ActivityRahasyaStart" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.ActivityRahasyaStart" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BronzeShield" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.BronzeShield" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GoldShield" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.GoldShield" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SilverShield" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.SilverShield" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BronzeShieldFinish" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.BronzeShieldFinish" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GoldShieldFinish" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.GoldShieldFinish" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SilverShieldFinish" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.SilverShieldFinish" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

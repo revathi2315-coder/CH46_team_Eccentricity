@@ -1,0 +1,61 @@
+
+    <resources>
+        <string name="app_name">NewSAILApp</string>
+        <string name="usrgender">Please select your Gender</string>
+        <string name="male">Male</string>
+        <string name="female">Female</string>
+        <string name="age">What is your Age</string>
+        <string name="BMI">Calculate your BODY MASS INDEX</string>
+        <string name="height">Please Enter your Height (in CM)</string>
+        <string name="weight">Please Enter your Weight (in KG)</string>
+        <string name="height_in_cm">Height</string>
+        <string name="Next">Next</string>
+        <string name="height_cm">Height</string>
+        <string name="weight_in_kg">Weight in Kilograms</string>
+        <string name="weight_kg">Weight</string>
+        <string name="aged">How old Are you ?</string>
+        <string name="age_25">"0 to 25 Years old"</string>
+        <string name="age_45">"25 to 45 years old "</string>
+        <string name="age_100">More than 45 years</string>
+        <string name="heart">Family history of Heart Attack</string>
+        <string name="motherFather">Both Mother and Father</string>
+        <string name="otherRelative">Either One</string>
+        <string name="noneOfThem">None</string>
+        <string name="diabetic">Are you a Diabetic</string>
+        <string name="notdiabetic">Not a Diabetic</string>
+        <string name="diabetes"> Am a Diabetic</string>
+        <string name="alcohol">how often do you consume Alcohol</string>
+        <string name="nonalcoholic">Not an Alcoholic</string>
+        <string name="Alcoholic"> Am a Alcoholic</string>
+        <string name="calories">how often do you exercise</string>
+        <string name="moderate">Do moderate activity</string>
+        <string name="sedentary">Have a Sedentary life style</string>
+        <string name="workout"> Am a fitness maniac</string>
+        <string name="Food">Are you food conscious</string>
+        <string name="highlyfoodconscious">I watch what i eat</string>
+        <string name="foodjunkie">Am a Food Junkie</string>
+        <string name="smoking">How often do you smoke</string>
+        <string name="ActiveSmoker">Am an active smoker</string>
+        <string name="PassiveSmoker">I am passive smoker or quit smoking</string>
+        <string name="NonSmoker">i don\'t smoke</string>
+        <string name="sleep">How many hours do you sleep</string>
+        <string name="sleepless5">Sleep less than 5 hours</string>
+        <string name="sleep6to8">Sleep between 6 to 8 hours</string>
+        <string name="sleepmore8">Sleep more than 8 hours </string>
+        <string name="bloodpressure">Do you suffer from High Blood Pressure</string>
+        <string name="highbp">I have high Blood Pressure</string>
+        <string name="nobp">No Blood Pressure</string>
+        <string name="lovethyself">How much do you love yourself</string>
+        <string name="physicalactivity">i workout daily or engage in physical activity</string>
+        <string name="nophysicalactivity">i dont engage in any physical activity</string>
+        <string name="heartscore">YOUR HEART SCORE IS 40%</string>
+        <string name="heartrate"> Kindly consult your physician.</string>
+        <string name="howtallareyou">Tell us how Tall are you </string>
+        <string name="yourWeight">How much do you weigh </string>
+        <string name="Thanks"> Thanks for Your time and Patience</string>
+        <string name="restart">RESTART</string>
+        <string name="start">START</string>
+        <string name="clickhere">CLICK HERE</string>
+
+   </resources>
+

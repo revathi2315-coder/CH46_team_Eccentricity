@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/questionbackground"
+    tools:context=".DietPattern">
+
+
+    <TableLayout
+        android:layout_width="318dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="233dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="247dp"
+        android:layout_marginBottom="151dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/lemonada_bold"
+                android:text="@string/Food"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorPrimaryDark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start">
+
+            <RadioButton
+                android:id="@+id/radio_foodconscious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemonada_bold"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/highlyfoodconscious"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark">
+
+            </RadioButton>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start">
+
+            <RadioButton
+                android:id="@+id/radio_junkfood"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/lemonada_bold"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/foodjunkie"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark">
+            </RadioButton>
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

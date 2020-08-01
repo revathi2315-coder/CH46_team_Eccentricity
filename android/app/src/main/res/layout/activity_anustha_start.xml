@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anushtastart"
+    tools:context=".BloodPressureHistory">
+
+
+    <Button
+        android:id="@+id/anusthastart"
+        android:layout_width="119dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="299dp"
+        android:layout_marginTop="214dp"
+        android:layout_marginEnd="313dp"
+        android:layout_marginBottom="142dp"
+        android:fontFamily="@font/lemonada_bold"
+        android:text="@string/start"
+        android:background="#F2D093"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
