@@ -21,6 +21,7 @@
         <string name="motherFather">Both Mother and Father</string>
         <string name="otherRelative">Either One</string>
         <string name="noneOfThem">None</string>
+        <string name="none">None</string>
         <string name="diabetic">Are you a Diabetic</string>
         <string name="notdiabetic">Not a Diabetic</string>
         <string name="diabetes"> Am a Diabetic</string>
