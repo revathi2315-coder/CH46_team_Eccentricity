@@ -1,0 +1,39 @@
+INstallation document for Web Application 
+
+Download and install WAMPSERVER from the internet. This is for running MYSQL / PHP / Apache servers
+
+Create a Database named sih_46_ecc_2020 in Mysql Database 
+
+Then create two tables with the insert script as below 
+
+CREATE TABLE `user_data` (
+ `user_givenname` varchar(50) NOT NULL,
+ `user_email` varchar(50) NOT NULL,
+ `user_healthscore` varchar(10) NOT NULL,
+ `user_agegroup` varchar(10) NOT NULL,
+ `user_loggeddate` datetime(6) NOT NULL,
+ `user_insuranceplan` varchar(10) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `user_details` (
+ `user_id` varchar(50) NOT NULL,
+ `user_password` varchar(50) NOT NULL,
+ `user_secret` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+Then copy the folder sih46ecc2020 that you downloaded from github and copy it into the www folder 
+of the WAMPSERVER. And vola You are all set . 
+
+Once the Setup is complete 
+open a browser of your choice and hit the url http://localhost/sih46ecc2020/login.php and the App should open up 
+User credentials to login are 
+Username : Admin
+Password : Admin
+
+Vola YOu are all set... 
+
+
+
+
+
