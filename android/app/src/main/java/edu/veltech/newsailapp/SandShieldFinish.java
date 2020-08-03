@@ -2,18 +2,16 @@ package edu.veltech.newsailapp;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
-
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.content.SharedPreferences;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -25,12 +23,17 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class BronzeShieldFinish extends AppCompatActivity {
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SandShieldFinish extends AppCompatActivity {
+
     public static final String DEFAULT = "N/A";
     public static final int CONNECTION_TIMEOUT=10000;
     public static final int READ_TIMEOUT=15000;
     public String   username;
     public  String password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,27 +41,19 @@ public class BronzeShieldFinish extends AppCompatActivity {
         getSupportActionBar().hide(); // hide the title bar
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
-        setContentView(R.layout.activity_bronze_result);
+        setContentView(R.layout.activity_sand_result);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        SharedPreferences sharedPreferences = getSharedPreferences("UserDetails", MODE_PRIVATE);
-        String useremail = sharedPreferences.getString("useremail",DEFAULT);
-        String userDisplayName =  sharedPreferences.getString("userdisplayname",DEFAULT);
-        String userGivenName = sharedPreferences.getString("usergivenname",DEFAULT);
-        String userAgegroup = sharedPreferences.getString("useragegroup",DEFAULT);
-
-       /* if (useremail.equals(DEFAULT) || userDisplayName.equals(DEFAULT) || userGivenName.equals(DEFAULT)){
-            Toast.makeText(this,"loading details not found",Toast.LENGTH_SHORT).show();
-        }
-        else {
-            Toast.makeText(BronzeShieldFinish.this,useremail + userDisplayName + userGivenName, Toast.LENGTH_LONG).show();
-        }*/
         Button startButton = (Button) findViewById(R.id.start);
+        username = getApplicationContext().getResources().getString(R.string.Username);
+        password = getApplicationContext().getResources().getString(R.string.Password);
+
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // When the Button is clicked after enetering the height and weight calculate the BMI
+                // When the Button is clicked
                 String serverResponse = UpdateHeartScoretoServer();
-                Intent intent = new Intent(getApplicationContext(), ActivityPlanC.class);
+                //Toast.makeText(SandShieldFinish.this, serverResponse+"Is not null",Toast.LENGTH_LONG ).show();
+                Intent intent = new Intent(getApplicationContext(), ActivityPlanD.class);
                 startActivity(intent);
                 finish();
             }
@@ -68,7 +63,7 @@ public class BronzeShieldFinish extends AppCompatActivity {
         HttpURLConnection conn = null;
         URL url = null;
         try {
-            url = new URL("http://54.145.155.144/loginpost.php");
+               url = new URL("http://54.145.155.144/loginpost.php");
         }
         catch (MalformedURLException e) {
             //Toast.makeText()
@@ -154,5 +149,3 @@ public class BronzeShieldFinish extends AppCompatActivity {
     }
 
 }
-
-

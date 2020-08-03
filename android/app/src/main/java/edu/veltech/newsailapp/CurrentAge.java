@@ -1,6 +1,7 @@
 package edu.veltech.newsailapp;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
@@ -36,6 +37,8 @@ public class CurrentAge extends AppCompatActivity {
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
+        SharedPreferences sharedPref = getSharedPreferences("UserDetails",MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
 
         // Check which radio button was clicked
         switch(view.getId()) {
@@ -49,6 +52,8 @@ public class CurrentAge extends AppCompatActivity {
                     else if(subjectGender.equals("Female")) {
                         heartScore = 0;
                     }
+                    editor.putString("useragegroup","0-25");
+                    editor.apply();
                     intent.putExtra("HEART_SCORE",heartScore);
                     startActivity(intent);
                     break;
@@ -63,6 +68,8 @@ public class CurrentAge extends AppCompatActivity {
                     else if(subjectGender.equals("Female")) {
                         heartScore = 1;
                     }
+                    editor.putString("useragegroup","25-45");
+                    editor.apply();
                     intent.putExtra("HEART_SCORE",heartScore);
                     startActivity(intent);
                     break;
@@ -77,6 +84,8 @@ public class CurrentAge extends AppCompatActivity {
                     else if(subjectGender.equals("Female")) {
                         heartScore = 2;
                     }
+                    editor.putString("useragegroup","45-100");
+                    editor.apply();
                     intent.putExtra("HEART_SCORE",heartScore);
                     startActivity(intent);
                     break;

@@ -91,7 +91,8 @@ public class ActivityLoginWithGoogle extends AppCompatActivity implements View.O
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
             //Log.w("Warning", "signInResult:failed code=" + e.getStatusCode());
-            Toast.makeText(ActivityLoginWithGoogle.this,"signInResult:failed code=" + e.getStatusCode(), Toast.LENGTH_LONG).show();
+            //Toast.makeText(ActivityLoginWithGoogle.this,"Google Authentication Service Unavailable. Please Try Again later" + e.getStatusCode(), Toast.LENGTH_LONG).show();
+            Toast.makeText(ActivityLoginWithGoogle.this,"Google Authentication Service Unavailable. Please Try Again later" + e.getStatusCode(), Toast.LENGTH_LONG).show();
         } catch (Throwable throwable) {
 
             Toast.makeText(ActivityLoginWithGoogle.this,"inside throwable"+ throwable.getMessage(), Toast.LENGTH_LONG).show();
@@ -107,7 +108,7 @@ public class ActivityLoginWithGoogle extends AppCompatActivity implements View.O
             editor.putString("usergivenname",account.getGivenName());
             editor.putString("userdisplayname",account.getDisplayName());
             editor.apply();
-            Toast.makeText(ActivityLoginWithGoogle.this, account.getEmail() +  account.getGivenName(), Toast.LENGTH_LONG).show();
+            Toast.makeText(ActivityLoginWithGoogle.this,"Your are Logged in as "+account.getGivenName() + "With Email address "+account.getEmail(), Toast.LENGTH_LONG).show();
             Intent intent = new Intent(ActivityLoginWithGoogle.this, MainMap.class);
             startActivity(intent);
         }
