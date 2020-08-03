@@ -21,7 +21,6 @@
         <string name="motherFather">Both Mother and Father</string>
         <string name="otherRelative">Either One</string>
         <string name="noneOfThem">None</string>
-        <string name="none">None</string>
         <string name="diabetic">Are you a Diabetic</string>
         <string name="notdiabetic">Not a Diabetic</string>
         <string name="diabetes"> Am a Diabetic</string>
@@ -54,9 +53,16 @@
         <string name="howtallareyou">Tell us how Tall are you </string>
         <string name="yourWeight">How much do you weigh </string>
         <string name="Thanks"> Thanks for Your time and Patience</string>
-        <string name="restart">RESTART</string>
+        <string name="restart">NEXT STEPS</string>
         <string name="start">START</string>
         <string name="clickhere">CLICK HERE</string>
-
+        <string name="Username">Admin</string>
+        <string name="Password">Admin</string>
+        <string name="LoginGet">Login - Get</string>
+        <string name="LoginPost">Login - Post</string>
+        <string name="closebtn">Close</string>
+        <string name="Role">Not assigned</string>
+        <string name="method">Login Method</string>
+        <string name="Choose">Choose Method</string>
    </resources>
 
