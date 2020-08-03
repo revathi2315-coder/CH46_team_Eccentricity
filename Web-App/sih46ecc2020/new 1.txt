@@ -1,0 +1,94 @@
+INSERT INTO `user_data`(`user_givenname`, `user_email`, `user_healthscore`, `user_loggeddate`, `user_agegroup`, `user_insuranceplan`)
+VALUES ('SAI RAMESH','sairamesh@gmail.com','6','2020-08-01 10:08:55.000000','25-45','PLAN-A');
+
+INSERT INTO `user_data`(`user_givenname`, `user_email`, `user_healthscore`, `user_loggeddate`, `user_agegroup`, `user_insuranceplan`)
+VALUES ('REVATHI','revathi@gmail.com','8','2020-08-01 10:08:55.000000','0-25','PLAN-B');
+
+INSERT INTO `user_data`(`user_givenname`, `user_email`, `user_healthscore`, `user_loggeddate`, `user_agegroup`, `user_insuranceplan`)
+VALUES ('KOWSALYA','kowsi@gmail.com','6','2020-08-01 10:08:55.000000','0-25','PLAN-A');
+
+INSERT INTO `user_data`(`user_givenname`, `user_email`, `user_healthscore`, `user_loggeddate`, `user_agegroup`, `user_insuranceplan`)
+VALUES ('VIGNESH','vignesh@gmail.com','7','2020-08-01 10:08:55.000000','0-25','PLAN-B');
+
+INSERT INTO `user_data`(`user_givenname`, `user_email`, `user_healthscore`, `user_loggeddate`, `user_agegroup`, `user_insuranceplan`)
+VALUES ('ANAND','chenga@gmail.com','18','2020-08-01 10:08:55.000000','25-45','PLAN-B');
+
+INSERT INTO `user_data`(`user_givenname`, `user_email`, `user_healthscore`, `user_loggeddate`, `user_agegroup`, `user_insuranceplan`)
+VALUES ('GOYYALE','goyyale@gmail.com','17','2020-08-01 10:08:55.000000','45-100','PLAN-C');
+
+INSERT INTO `user_data`(`user_givenname`, `user_email`, `user_healthscore`, `user_loggeddate`, `user_agegroup`, `user_insuranceplan`)
+VALUES ('googler','googler@gmail.com','22','2020-08-01 10:08:55.000000','25-45','PLAN-D');
+
+INSERT INTO `user_data`(`user_givenname`, `user_email`, `user_healthscore`, `user_loggeddate`, `user_agegroup`, `user_insuranceplan`)
+VALUES ('REVATHI','revathi@gmail.com','8','2020-08-01 10:08:55.000000','0-25','PLAN-C');
+
+INSERT INTO `user_data`(`user_givenname`, `user_email`, `user_healthscore`, `user_loggeddate`, `user_agegroup`, `user_insuranceplan`)
+VALUES ('KOWSALYA','kowsi@gmail.com','6','2020-08-01 10:08:55.000000','0-25','PLAN-C');
+
+INSERT INTO `user_data`(`user_givenname`, `user_email`, `user_healthscore`, `user_loggeddate`, `user_agegroup`, `user_insuranceplan`)
+VALUES ('VIGNESH','vignesh@gmail.com','7','2020-08-01 10:08:55.000000','0-25','PLAN-A');
+
+SELECT user_insuranceplan , COUNT(*) FROM user_data where user_agegroup='0-25' GROUP BY user_insuranceplan
+
+$sql = "SELECT user_insuranceplan \"Plan Code\", \n"
+
+    . "COUNT(*) \"Total Users\" \n"
+
+    . "FROM user_data \n"
+
+    . "where user_agegroup=\'0-25\' GROUP BY user_insuranceplan";
+
+<!-- session_start();
+if(isset($_POST['check_login']))
+{
+ $host="localhost";
+ $username="root";
+ $password="";
+ $databasename="sih_46_ecc_2020";
+ 
+ $connect=mysql_connect($host,$username,$password,"3308");
+ $db=mysql_select_db($databasename);
+
+ $userid=$_POST['user_id'];
+ $user_password=$_POST['user_secret'];
+ $select_data=mysql_query("select * from user_details where user_id='$user_id' and user_password='$user_password'");
+ if($row=mysql_fetch_array($select_data))
+ {
+  $_SESSION['user_id']=$row['user_id'];
+  echo "success";
+ }
+ else
+ {
+  echo "fail";
+ }
+ }
+ 
+ exit();
+}-->
+sql = "select user_id from user_details where user_id='$user_id' and user_password='$user_password'";
+$result -> $mysqli -> query($sql);
+echo $sql;
+exit();
+// Associative array
+$row = $result -> fetch_array(MYSQLI_ASSOC);
+if ($row['user_id']=$user_id){
+
+$
+	echo "success";
+}
+else
+{
+	echo "Invalid User Name or Password";
+}
+$result -> free_result();
+$mysqli -> close();
+exit();
+
+<?php
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "miraclesafe";
+$created_date = date("Y-m-d H:i:s");
+   
